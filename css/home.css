@@ -1,0 +1,114 @@
+
+.homepage-iframe-container{
+    position: relative; 
+    padding-top: 56.25%;
+}
+.homepage-iframe{
+    position: absolute; 
+    inset: 0px;
+}
+
+@media screen and (min-width: 1200px) {
+    .homepage-iframe{
+        top: -138px;
+    }
+}
+
+.item:first-child{
+    background-color: var(--grayText);
+}
+
+.pp-tableCell{
+    vertical-align: top;
+}
+
+
+
+.vertical-slider .slide-1{
+    background-color: var(--grayText);
+}
+@media screen and (max-width: 1199.98px) {
+
+    .slide-1, .slide-1 #myVideo, #pagepiling, .homepage-video-overlay{
+        height: 100dvh;
+    }
+    .item-inner{
+        min-height: 100dvh
+    }
+
+    .slide-1{
+        background-image: url('../images/Pattern%20white.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 100%;
+    }
+    .slide-1 .slide-1--text{
+        line-height: 3rem;
+    }
+}
+
+@media screen and (max-width: 767.98px) {
+    .slide-1 .slide-1--text{
+        bottom: 9%;
+    }
+}
+@media screen and (max-width: 575.98px) {
+    .slide-1 .slide-1--text{
+        bottom: 25%;
+    }
+}
+
+@media screen and (max-width: 1199.98px) {
+    .mobile-homepage-first-header-background{
+        position: relative;
+        background: var(--grayText) !important;
+        padding: .5rem 0 !important;
+    }
+    .dark-gray-background{
+        position: fixed;
+    }
+    
+    .light-gray-background{
+        position: fixed;
+    }
+}
+#footer.footer{
+    padding: 1rem 1rem 3rem;
+}
+@media screen and (max-width: 991.98px) {
+    #footer.footer{
+        padding: 1rem 1rem 7rem;
+    }
+}
+
+
+
+.video-mute-button{
+    background-color: var(--redColor);
+    padding: 0.5rem;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    bottom: 150px;
+    left: 15px;
+    z-index: 99999;
+    opacity: 50%;
+}
+
+@media screen and (max-width: 1199.98px) {
+    .video-mute-button{
+        bottom: 10px;
+    }
+}
+
+.arabic-version .video-mute-button{
+    left: unset;
+    right: 15px;
+}
+
+.video-mute-button image{
+    width: 35px !important;
+}
