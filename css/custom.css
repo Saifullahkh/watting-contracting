@@ -1043,9 +1043,9 @@ img {
         padding-bottom: 10rem !important;
     }
 
-    .item, .slide-1, .slide-1 #myVideo, #pagepiling, .vertical-slider, html, body, .homepage-video-overlay{
+    /* .item, .slide-1, .slide-1 #myVideo, #pagepiling, .vertical-slider, html, body, .homepage-video-overlay{
         height: 100dvh;
-    }
+    } */
 
     .item-inner{
         min-height: 100dvh
