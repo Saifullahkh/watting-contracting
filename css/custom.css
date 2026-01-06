@@ -766,6 +766,7 @@ body.arabic-version #cssmenu ul ul li:hover > a, body.arabic-version #cssmenu ul
 #cssmenu > ul > li > a {
     margin-inline: 0;
     padding-inline: 7px;
+    color: var(--white) !important;
 }
 
 #cssmenu ul ul li a {
@@ -844,6 +845,15 @@ img {
     .slide-1 #myVideo{
         object-fit: cover;
     }
+    #cssmenu > ul > li > a {
+    color: #000 !important;
+}
+}
+
+@media screen and (max-width: 1024px) {
+    #cssmenu > ul > li > a {
+    color: #000 !important;
+}
 }
 
 .dark-gray-background{

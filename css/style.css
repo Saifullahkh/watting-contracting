@@ -3045,7 +3045,7 @@ tr:nth-child(even) {
   padding: 0.5rem;
   margin: 1rem;
   background: var(--redColor);
-  height: 80px !important;
+  height: 50px !important;
 }
 .hoveredTitle p {
   margin: 0;
@@ -4888,7 +4888,7 @@ body {
   content: "";
   height: 100%;
   width: 100%;
-  border-right: 1px solid #000;
+  border-right: 1px solid #fff;
 
   inset: 0;
 }
@@ -4904,7 +4904,7 @@ body {
 .header-panel-btm .navigation-navbar--global-img {
   display: flex;
   align-items: center;
-  color: var(--white);
+  color: var(--white) !important;
   font-family: "Montserrat-Bold";
   gap: 1rem;
 }
@@ -5202,7 +5202,7 @@ body {
   color: var(--white);
 }
 #footer .footerLinks > a:hover {
-  color: var(--grayText);
+  color: rgb(187, 183, 183);
 }
 #footer .footerLinks h3 {
   font-family: "Montserrat-SemiBold";
@@ -5244,7 +5244,7 @@ body {
 }
 #footer .footerCenter {
   text-align: center;
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.2rem;
   color: var(--white);
   position: relative;
   z-index: 2;
