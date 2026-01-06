@@ -73,11 +73,11 @@
     }
 }
 #footer.footer{
-    padding: 1rem 1rem 3rem;
+    padding: 1rem 1rem 0rem;
 }
 @media screen and (max-width: 991.98px) {
     #footer.footer{
-        padding: 1rem 1rem 7rem;
+        padding: 1rem 1rem 2rem;
     }
 }
 
