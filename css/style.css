@@ -131,7 +131,8 @@ img {
 }
 
 .mission-values-container {
-  background: var(--gray);
+  background: #2C3E50;
+  color: var(--white);
   padding: 5rem 2rem;
   transform: translateY(-20%);
   min-height: max-content;
@@ -853,11 +854,12 @@ img {
   justify-content: center;
   align-items: center;
   position: relative;
-  min-height: 100vh;
+  min-height: 150vh;
   background: var(--grayText);
   background-position: bottom right;
   background-repeat: no-repeat;
   background-image: url("../images/Pattern white.png");
+  
 }
 
 .slide-2 .slide-2__pattern img {
@@ -2355,7 +2357,7 @@ tr:nth-child(even) {
 }
 
 #certificatesCardsSection .areasSections > .cards--grid__container {
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
 }
 
 @media (max-width: 768px) {
@@ -5770,10 +5772,10 @@ p {
 
 @media (min-width: 768px) {
   #certificatesCardsSection .areasSections > .cards--grid__container {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
   .certificatesOfExcellence__gridContainer {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -5791,10 +5793,11 @@ p {
 
 @media (min-width: 768px) {
   #certificatesCardsSection .areasSections > .cards--grid__container {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
   }
   .certificatesOfExcellence__gridContainer {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -7049,6 +7052,7 @@ p {
 
 .mission-values-container__flex--heading {
   font-size: 1.3rem;
+  color: white;
 }
 
 .mission-values-container__flex p {
