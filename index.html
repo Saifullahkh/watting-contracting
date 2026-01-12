@@ -83,7 +83,7 @@
       }
 
       .latest-news--card__button:hover > * {
-        color: red !important;
+        color: white !important;
       }
 
       .vertical-slider {
@@ -126,6 +126,66 @@
           transform: translateY(-5px) translateX(-50%);
         }
       }
+    </style>
+    <style>
+      /* Section 4 - Our Projects */
+#section-4 {
+  position: relative;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+#section-4 .item-inner {
+  padding: 100px 0 50px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+/* Header Styling */
+#section-4 .aboutUsProjects--header {
+  text-align: center;
+  animation: fadeInUp 1s ease;
+}
+
+#section-4 .aboutUsProjects--header h3{
+   font-family: "Montserrat-SemiBold";
+  text-transform: uppercase;
+  font-size: 2.5rem;
+}
+
+
+
+/* Projects Grid - 1 Row, 4 Columns */
+#section-4 .leading-impact-slide {
+  display: grid;
+  /* repeat(4, 1fr) se 4 barabar columns banenge */
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 30px;
+  margin-bottom: 50px;
+  align-items: start;
+}
+
+/* Mobile Responsive Fix */
+/* Taaki mobile par 4 columns bahut chote na ho jayein */
+@media (max-width: 992px) {
+  #section-4 .leading-impact-slide {
+    grid-template-columns: repeat(2, 1fr); /* Tablet par 2 columns */
+  }
+}
+
+@media (max-width: 576px) {
+  #section-4 .leading-impact-slide {
+    grid-template-columns: 1fr; /* Mobile par 1 column */
+  }
+}
+
+
+
+
+
+
     </style>
     <script nonce="dmJnBPePFsR4be29Am9xInZafHAuhV6UwOVmyAkpvvYauBNKuV">
       var rtl = false;
@@ -183,26 +243,14 @@
   </head>
 
   <body class="">
-    <!-- Scroll Indicator -->
-    
-
-    <!-- <div id="preloader">
-      <div class="preloader-wrap">
-        <div class="preloader">
-          <i>.</i>
-          <i>.</i>
-          <i>.</i>
-        </div>
-      </div>
-    </div> -->
-
+  
     <div class="header-panel-btm">
       <div class="container">
         <div class="row">
           <div class="hewader-panel-main">
             <div class="header-logo">
               <a href="index.html">  
-                <img class="light-logo" src="images/Wattin-logo.png" />
+                <img class="" src="images/Wattin-logo.png" />
               </a>
             </div>
             <div class="header-menu">
@@ -210,9 +258,9 @@
                 <ul>
                    <li><a class="" href="./index.html"> HOME </a></li>
                   <li>
-                    <a href="./about/about-us.html">
+                    <a href="./about-us.html">
                       ABOUT US
-                      <svg
+                      <!-- <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="20"
                         height="20"
@@ -225,23 +273,23 @@
                         class="lucide lucide-chevron-down"
                       >
                         <path d="m6 9 6 6 6-6"></path>
-                      </svg>
+                      </svg> -->
                     </a>
-                    <ul>
-                      <!-- <li><a href="./about/about-us.html"> About El-Seif </a></li> -->
-                      <!-- <li><a href="./about/ceo-message.html"> CEO Message </a></li>
+                    <!-- <ul>
+                      <li><a href="./about/about-us.html"> About El-Seif </a></li>
+                      <li><a href="./about/ceo-message.html"> CEO Message </a></li>
                       <li>
                         <a href="./about/field-of-business.html"> Fields of Business </a>
-                      </li> -->
+                      </li>
                       <li>
                         <a href="./about/hse.html"> Health Safety and Quality </a>
                       </li>
-                      <!-- <li><a href="./about/client.html"> Clients </a></li>
-                      <li><a href="./about/partner.html"> Partners </a></li> -->
-                    </ul>
+                      <li><a href="./about/client.html"> Clients </a></li>
+                      <li><a href="./about/partner.html"> Partners </a></li>
+                    </ul> -->
                   </li>
 
-                  <!-- <li><a class="" href="./our-project/our-project.html"> PROJECTS </a></li> -->
+                  <li><a class="" href="./our-project/our-project.html"> PROJECTS </a></li>
 
                   <li>
                     <a href="./service/service.html">
@@ -295,8 +343,11 @@
                       <li>
                         <a href="./service/low-current-system.html"> Low Current Systems </a>
                       </li>
-                      <li>
+                      <!-- <li>
                         <a href="./service/MEP-work.html"> MEP Works </a>
+                      </li> -->
+                       <li>
+                        <a href="./service/hse.html"> Health Safety and Quality </a>
                       </li>
                       <li>
                         <a href="./service/transport-logistic.html"> Transport & logistics</a>
@@ -345,7 +396,7 @@
                           height="24"
                           viewBox="0 0 24 24"
                           fill="none"
-                          stroke="#000"
+                          stroke="#fff"
                           stroke-width="2"
                           stroke-linecap="round"
                           stroke-linejoin="round"
@@ -398,7 +449,7 @@
                   height="24"
                   viewBox="0 0 24 24"
                   fill="none"
-                  stroke="#000"
+                  stroke="#fff"
                   stroke-width="2"
                   stroke-linecap="round"
                   stroke-linejoin="round"
@@ -445,7 +496,7 @@
                 height="24"
                 viewBox="0 0 24 24"
                 fill="none"
-                stroke="#000"
+                stroke="#fff"
                 stroke-width="2"
                 stroke-linecap="round"
                 stroke-linejoin="round"
@@ -578,7 +629,7 @@
                           <img src="images/Check.png" alt="" loading="lazy" />
                         </picture>
                       </div>
-                      Electrical panel supply & installation
+                      Electrical Panels Supply & Installation (Approved Material from SEC,NWC,SASO,UL-Listed)
                     </div>
                     <div class="slide-2__check--container">
                       <div class="slide-2__check">
@@ -587,7 +638,7 @@
                           <img src="images/Check.png" alt="" loading="lazy" />
                         </picture>
                       </div>
-                      MEP contracting services
+                      MEP Supply & Installation services (Approved Material & Resources  from NWC, AMANA)
                     </div>
                     <div class="slide-2__check--container">
                       <div class="slide-2__check">
@@ -596,7 +647,7 @@
                           <img src="images/Check.png" alt="" loading="lazy" />
                         </picture>
                       </div>
-                      Civil construction works
+                     Civil/Architecture works Supply & Installation 
                     </div>
                     <div class="slide-2__check--container">
                       <div class="slide-2__check">
@@ -605,7 +656,7 @@
                           <img src="images/Check.png" alt="" loading="lazy" />
                         </picture>
                       </div>
-                      Low current system installations
+                      Low Current System Supply & Installation (MOI, Civil defense ,CITC,OSP,ISP Material & Resources)
                     </div>
                     <div class="slide-2__check--container">
                       <div class="slide-2__check">
@@ -614,7 +665,16 @@
                           <img src="images/Check.png" alt="" loading="lazy" />
                         </picture>
                       </div>
-                      Company transport & logistics
+                     Construction vehicles & transport services
+                    </div>
+                    <div class="slide-2__check--container">
+                      <div class="slide-2__check">
+                        <picture>
+                          <source type="image/webp" srcset="images/Check.webp" />
+                          <img src="images/Check.png" alt="" loading="lazy" />
+                        </picture>
+                      </div>
+                      Building construction projects Material & Execution services
                     </div>
                   </div>
                   
@@ -906,6 +966,291 @@
           </div>
         </div>
 
+        <!-- Slide Four  -->
+          <div class="item" id="section-4">
+            <section class="item-inner">
+              <div class="container">
+                <div class="aboutUsProjects--header">
+                  <h3>Our Projects</h3>
+                  <h5>Offering Unmatched Results in Every Project.</h5>
+                </div>
+                <div class="leading-impact-slide" id="leading-impact-slide">
+                  <div class="our-projects-box">
+                    <div class="our-projects-box-pics">
+                      <picture
+                        ><source
+                          type="image/webp"
+                          srcset="images/kafd1.png" />
+                        <img
+                          class=""
+                          src="./images/kafd1.png"
+                          alt="king-1"
+                          loading="lazy"
+                      /></picture>
+                    </div>
+                    <div class="our-projects-box-content">
+                      <div class="our-projects-box-name">
+                        <picture
+                          ><source type="image/webp" srcset="./images/business-and-trade copy 3.png" />
+                          <img
+                            class=""
+                            src="./images/business-and-tradeNew.png"
+                            alt=""
+                            loading="lazy"
+                        /></picture>
+                        <span>KAFD</span>
+                         <div class="mt-3">
+                          <picture
+                            ><source type="image/webp" srcset="./images/placeholderNew.png" />
+                            <img
+                              class=""
+                              src="./images/placeholderNew.png"
+                              alt=""
+                              loading="lazy"
+                          /></picture>
+                          <span>Riyadh, KSA</span>
+                        </div>
+
+                      </div>
+                      <div class="our-projects-box-location">
+                       
+
+                        <a href="./our-project/kafd.html">
+                          <button class="latest-news--card__button">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              class="lucide lucide-arrow-right-circle arabic-arrow"
+                            >
+                              <circle cx="12" cy="12" r="10"></circle>
+                              <path d="M8 12h8"></path>
+                              <path d="m12 16 4-4-4-4"></path>
+                            </svg>
+                            <span> View project </span>
+                          </button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="our-projects-box">
+                    <div class="our-projects-box-pics">
+                      <picture
+                        ><source
+                          type="image/webp"
+                          srcset="images/kaec.png" />
+                        <img
+                          class=""
+                          src="images/kaec.png"
+                          alt=""
+                          loading="lazy"
+                      /></picture>
+                    </div>
+                    <div class="our-projects-box-content">
+                      <div class="our-projects-box-name">
+                        <picture
+                          >
+                          <img
+                            class=""
+                            src="./images/business-and-tradeNew.png"
+                            alt=""
+                            loading="lazy"
+                        /></picture>
+                        <span>KAEC</span>
+                         <div class="mt-3">
+                          <picture
+                            ><source type="image/webp" srcset="./images/placeholderNew.png" />
+                            <img
+                              class=""
+                              src="images/placeholderNew.png"
+                              alt=""
+                              loading="lazy"
+                          /></picture>
+                          <span>Riyadh, KSA</span>
+                        </div>
+                      </div>
+                      <div class="our-projects-box-location">
+                        <a href="./our-project/kaec.html">
+                          <button class="latest-news--card__button">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              class="lucide lucide-arrow-right-circle arabic-arrow"
+                            >
+                              <circle cx="12" cy="12" r="10"></circle>
+                              <path d="M8 12h8"></path>
+                              <path d="m12 16 4-4-4-4"></path>
+                            </svg>
+                            <span> View project </span>
+                          </button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="our-projects-box">
+                    <div class="our-projects-box-pics">
+                      <picture
+                        ><source type="image/webp" srcset="images/marriot-hotel-dq.png" />
+                        <img
+                          class=""
+                          src="images/marriot-hotel-dq.png"
+                          alt=""
+                          loading="lazy"
+                      /></picture>
+                    </div>
+                    <div class="our-projects-box-content">
+                      <div class="our-projects-box-name">
+                        <picture
+                          ><source type="image/webp" srcset="images/business-and-tradeNew.png" />
+                          <img
+                            class=""
+                            src="images/business-and-tradeNew.png"
+                            alt=""
+                            loading="lazy"
+                        /></picture>
+                        <span
+                          >Marriot Hotel DQ</span
+                        >
+                         <div class="mt-3">
+                          <picture
+                            ><source type="image/webp" srcset="images/placeholderNew.png" />
+                            <img
+                              class=""
+                              src="images/placeholderNew.png"
+                              alt=""
+                              loading="lazy"
+                          /></picture>
+                          <span>Riyadh, KSA</span>
+                        </div>
+                      </div>
+                      <div class="our-projects-box-location">
+                        <a
+                          href="./our-project/marriot-hotel-dq.html"
+                        >
+                          <button class="latest-news--card__button">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              class="lucide lucide-arrow-right-circle arabic-arrow"
+                            >
+                              <circle cx="12" cy="12" r="10"></circle>
+                              <path d="M8 12h8"></path>
+                              <path d="m12 16 4-4-4-4"></path>
+                            </svg>
+                            <span> View project </span>
+                          </button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="our-projects-box">
+                    <div class="our-projects-box-pics">
+                      <picture
+                        ><source type="image/webp" srcset="images/centro-hotel.png" />
+                        <img
+                          class=""
+                          src="images/centro-hotel.png"
+                          alt=""
+                          loading="lazy"
+                      /></picture>
+                    </div>
+                    <div class="our-projects-box-content">
+                      <div class="our-projects-box-name">
+                        <picture
+                          ><source type="image/webp" srcset="images/business-and-tradeNew.png" />
+                          <img
+                            class=""
+                            src="images/business-and-tradeNew.png"
+                            alt=""
+                            loading="lazy"
+                        /></picture>
+                        <span>Centro Hotel</span>
+                        <div class="mt-3">
+                          <picture
+                            ><source type="image/webp" srcset="images/placeholderNew.png" />
+                            <img
+                              class=""
+                              src="images/placeholderNew.png"
+                              alt=""
+                              loading="lazy"
+                          /></picture>
+                          <span>Riyadh, KSA</span>
+                        </div>
+                      </div>
+                      <div class="our-projects-box-location">
+                        <a href="./our-project/centro-hotel.html">
+                          <button class="latest-news--card__button">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              class="lucide lucide-arrow-right-circle arabic-arrow"
+                            >
+                              <circle cx="12" cy="12" r="10"></circle>
+                              <path d="M8 12h8"></path>
+                              <path d="m12 16 4-4-4-4"></path>
+                            </svg>
+                            <span> View project </span>
+                          </button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="aboutUsBtnProjects">
+                  <a href="./our-project/our-project.html">
+                    <button class="latest-news--card__button">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-arrow-right-circle arabic-arrow"
+                      >
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <path d="M8 12h8"></path>
+                        <path d="m12 16 4-4-4-4"></path>
+                      </svg>
+                      <span> Explore all projects </span>
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </section>
+          </div>
+
+
         <!-- Footer Section -->
         <div class="item" id="section-footer">
           <div class="saudi-vision">
@@ -923,13 +1268,13 @@
                 <div class="footerLinks">
                   <h3>Quick Links</h3>
                   <a href="./index.html">Home</a>
-                  <a href="./about/about-us.html">About Us</a>
-                  <a href="./about/hse.html">HSQ</a>
+                  <a href="./about-us.html">About Us</a>
+                  <a href="./service/hse.html">HSQ</a>
                 </div>
                 <div class="footerLinks FooterPaddingTop">
                   <a href="./service/service.html">Services</a>
                   <a href="./service/electrical-work.html">Electrical Works</a>
-                  <a href="./service/MEP-work.html">MEP Services</a>
+                  <a href="./our-project/our-project.html">Project</a>
                 </div>
                 <div class="footerLinks FooterPaddingTop">
                   <a href="./service/civil-work.html">Civil Works</a>
@@ -1127,7 +1472,7 @@
       nonce="dmJnBPePFsR4be29Am9xInZafHAuhV6UwOVmyAkpvvYauBNKuV"
     ></script>
     
-    <script nonce="dmJnBPePFsR4be29Am9xInZafHAuhV6UwOVmyAkpvvYauBNKuV">
+    <!-- <script nonce="dmJnBPePFsR4be29Am9xInZafHAuhV6UwOVmyAkpvvYauBNKuV">
       jQuery(function ($) {
         
         $(window).on("load", function () {
@@ -1233,7 +1578,7 @@
             $(".dark-logo").hide();
             $(".header-panel-btm")
               .addClass("light-gray-background")
-              .removeClass("dark-gray-background")
+              .removeClass("light-gray-background")
               .removeClass("mobile-homepage-first-header-background");
             $(".hewader-panel-main").addClass("white-header-color");
             $(
@@ -1245,7 +1590,7 @@
             $(".header-panel-btm")
               .removeClass("mobile-homepage-first-header-background")
               .removeClass("light-gray-background")
-              .addClass("dark-gray-background");
+              .addClass("light-gray-background");
             $(".hewader-panel-main")
               .removeClass("mobile-homepage-first-header-background")
               .removeClass("white-header-color");
@@ -1319,7 +1664,7 @@
                 }
               }
               
-              if (sectionIndex === 1 || sectionIndex === 4) {
+              if (sectionIndex === 1 || sectionIndex === 5) {
                 addWhiteColor();
                 if (sectionIndex === 1) {
                   addMobileHomePageFirstHeaderBackground();
@@ -1357,6 +1702,17 @@
           });
         }
 
+        function sectionThree() {
+          let navbar_height = $(".header-panel-btm").outerHeight();
+          $("#section-4 .item-inner").attr(
+            "style",
+            "padding-top: " + navbar_height + "px !important;"
+          );
+
+          $("#section-4 .item-inner > section").css({
+            "padding-bottom": "2rem",
+          });
+        }
         function footerResize() {
           $(".saudi-vision").css(
             "height",
@@ -1366,10 +1722,11 @@
 
         function resizeSections() {
           if ($(window).width() > 992) {
-            sectionTwo();
-            sectionThree();
-            footerResize();
-          }
+    sectionTwo();
+    sectionThree();
+    sectionFour(); // यहाँ कॉल करें
+    footerResize();
+  }
           
           // Adjust item heights for mobile
           if ($(window).width() <= 992) {
@@ -1411,6 +1768,6 @@
           }, 1000);
         });
       });
-    </script>
+    </script> -->
   </body>
 </html>

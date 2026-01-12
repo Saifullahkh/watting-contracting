@@ -66,6 +66,13 @@ img {
   position: relative;
   margin-bottom: 1rem;
 }
+
+.heroSection-container1{
+   height: 180vh;
+  width: 100%;
+  position: relative;
+  margin-bottom: 1rem;
+}
 .heroSection-container > img {
   position: absolute;
   inset: 0;
@@ -75,11 +82,15 @@ img {
   .heroSection-container {
     height: 75vh;
   }
+  .heroSection-container1 {
+    height: 130vh;
+  }
 }
 @media (max-width: 769px) {
   .heroSection-container {
     height: 50vh;
   }
+
 }
 .heroSection-container > h1 {
   position: absolute;
@@ -311,7 +322,7 @@ img {
   width: 100%;
   display: flex;
   justify-content: center;
-  padding: 5rem 0 3rem;
+  padding: 2rem 0 1rem;
 }
 .aboutUsProjects
 .our-projects-box
@@ -486,19 +497,20 @@ img {
   font-size: 1rem;
 }
 .aboutUsBtnProjects .latest-news--card__button {
-  background-color: var(--redColor);
-}
-.aboutUsBtnProjects .latest-news--card__button:hover {
   background-color: var(--white);
 }
+.aboutUsBtnProjects .latest-news--card__button:hover {
+  background-color: var(--redColor);
+  color: var(--white);
+}
 .aboutUsBtnProjects > .latest-news--card__button > a > svg {
-  stroke: #fff;
+  stroke: #fff !important;
 }
 .aboutUsBtnProjects > .latest-news--card__button:hover a {
   color: var(--redColor);
 }
 .aboutUsBtnProjects > .latest-news--card__button:hover svg {
-  stroke: var(--redColor);
+  stroke: var(--redColor) !important;
 }
 .aboutUsProjects--header {
   text-align: center;
@@ -849,17 +861,16 @@ img {
 
 /* ===================== Home page --> Slide Two <-- ==================== */
 .slide-2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  min-height: 150vh;
-  background: var(--grayText);
-  background-position: bottom right;
-  background-repeat: no-repeat;
-  background-image: url("../images/Pattern white.png");
-  
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 100px 0; /* 150vh ki jagah padding use karein taaki content fit rahe */
+    min-height: 100vh; 
+    background: var(--grayText); /* Light Gray professional background */
+    background-image: url("../images/Pattern white.png");
+    background-position: center right;
+    background-repeat: no-repeat;
+    overflow: hidden;
 }
 
 .slide-2 .slide-2__pattern img {
@@ -901,38 +912,45 @@ img {
 
 .slide-2 .grid {
   display: grid;
-  gap: 1rem;
+  gap: 1.5rem; /* Gap thora barha diya scannability ke liye */
   grid-template-columns: repeat(2, 1fr);
+  align-items: start; /* Items ko top se align rakhega */
 }
 
 @media (max-width: 575px) {
   .slide-2 .grid {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: 1fr;
   }
 }
 
-.slide-2 .grid > div {
-  display: flex;
+/* Container fix */
+.slide-2__check--container {
+  display: flex !important;
+  align-items: flex-start; /* Text agar 2 lines ka ho toh icon top par hi rahe */
   gap: 1rem;
+  font-size: 0.95rem; /* Text size thora balance kiya */
+  line-height: 1.4;   /* Text lines mein gap taaki parha jaye */
 }
 
-.slide-2 .grid > .slide-2__check--container {
-  display: flex;
-
-  /* justify-content: center; */
-  align-items: center;
-}
-
+/* Icon box fix */
 .slide-2 .grid .slide-2__check {
-  padding: 0.5rem;
-  width: 2.5rem;
-  height: 2.5rem;
-  border-radius: 100%;
+  flex-shrink: 0; /* Icon ko chota hone se rokega */
+  width: 2.2rem;
+  height: 2.2rem;
+  background: #fff;
+  border-radius: 50%;
   display: flex;
-
   justify-content: center;
   align-items: center;
-  background: #fff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05); /* Halki si shadow depth ke liye */
+  margin-top: 2px; /* Text ki pehli line ke sath align karne ke liye */
+}
+
+/* Image/SVG fix */
+.slide-2 .grid .slide-2__check img {
+  width: 1.2rem; /* Icon ka size container ke mutabiq */
+  height: auto;
+  object-fit: contain;
 }
 .slide-2 .grid > div > svg {
   width: 2rem;
@@ -2627,7 +2645,7 @@ tr:nth-child(even) {
   padding: 0.5rem 0;
 }
 .our-projects-box-name {
-  display: flex;
+  
   font-size: 1.2rem;
 
   gap: 1.5rem;
@@ -5884,9 +5902,9 @@ p {
 }
 
 .item.slide-4 .aboutUsProjects--header h3 {
-  font-size: 2.5rem;
-  text-transform: uppercase;
-  color: var(--white);
+   font-family: "Montserrat-SemiBold" !important;
+  text-transform: uppercase !important;
+  font-size: 2.5rem !important;
 }
 .item.slide-4 .aboutUsProjects--header h5 {
   color: var(--white);

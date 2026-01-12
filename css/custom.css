@@ -313,6 +313,7 @@
 
 @media screen and (max-width: 568px) {
     .header-logo img{
+        width: 8rem !important;
         padding-left: 1rem;
         padding-right: unset;
     }
@@ -866,9 +867,7 @@ img {
 
 @media (min-width: 992px) {
 
-    .homeSlider--slide-3__ourProject, .item.slide-4 > .aboutUsProjects {
-        padding: unset !important;
-    }
+   
 
     .slide-4 .aboutUsBtnProjects {
         padding: 3rem 0 0;
@@ -1818,7 +1817,7 @@ body > div.header-panel-btm > div > div > div > div.navigation-navbar--global-im
 }
 
 .aboutUsBtnProjects .latest-news--card__button:hover > *  {
-    color: var(--redColor) !important;
+    color: var(--white) !important;
 }
 
 
